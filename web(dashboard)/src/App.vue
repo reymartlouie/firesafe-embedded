@@ -1,11 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div id="app">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+  #app {
+    min-height: 100vh;
+    background: #0f172a;
+    font-family: 'Work Sans', sans-serif;
+  }
+</style>
